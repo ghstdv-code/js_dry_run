@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #145DA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 605px;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+
+.wrapper header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper .content{
+    margin: 35px 0;
+}
+
+.content .qoute-area{
+    display: flex;
+    justify-content: center;
+}
+
+.qoute-area i{
+    font-size: 0.9em;
+}
+
+.qoute-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+
+.qoute-area i:last-child{
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.qoute-area p{
+    font-size: 1.325em;
+    text-align: center;
+    word-break: break-all;
+}
+
+.content .author-area{
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1rem;
+
+}
+
+.author-area span:first-child{
+    margin: 0 10px 0 0;
+    font-family: monospace;
+}
+
+.wrapper .buttons{
+    border-top: 1px solid #ccc;
+}
+
+.buttons .features{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.features ul{
+    display: flex;
+    list-style: none;
+}
+
+.features ul li{
+    height: 2.4rem;
+    width: 2.4rem;
+    margin: 0 5px;
+    border: 2px solid #145DA0;
+    color: #145DA0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.features li:hover{
+    background-color: #145DA0;
+    color: #fff;
+}
+
+.buttons button{
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid #0C2D48;
+    color: #fff;
+    background-color: #145DA0;
+    transition: all 0.3s ease;
+} 
+
+.buttons button:hover{
+    opacity: 0.9;
+}
+
+.buttons button.loading{
+    opacity: 0.95;
+}
+
+/* ul li:first-child{
+    margin-right: 10px;
+}
+
+ul li:last-child{
+    margin-left: 10px;
+} */

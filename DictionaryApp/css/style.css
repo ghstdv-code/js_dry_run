@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c31432;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    opacity: 0.95;
+}
+
+body {
+    background: #c31432;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.wrapper {
+    background-color: #fff;
+    width: 500px;
+    box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.51);
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.search input {
+    width: 90%;
+    outline: none;
+    border: 0;
+}
+
+.search span {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.search span:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+
+.search.onFocus {
+    border: #c31432 2px solid;
+}
+
+.search i.onFocus {
+    color: #c31432;
+}
+
+.wrapper ul {
+    display: none;
+    transition: all 5s ease-in-out;
+    overflow: hidden;
+}
+
+.wrapper ul.active {
+    display: block;
+}
+
+.wrapper p.info-text {
+    font-size: 0.825em;
+    text-align: justify;
+    color: #9a9a9a;
+}
+
+.wrapper.active .info-text {
+    display: none;
+}
+
+.wrapper p.info-text span {
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    margin-bottom: 14px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+}
+
+ul .content {
+    overflow-y: auto;
+    max-height: 220px;
+}
+
+.content .meaning .details span {
+    font-size: 0.850em;
+}
+
+
+ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.details p {
+    margin-bottom: 0;
+}
+
+ul .word .details p {
+    font-size: 1.2em;
+}
+
+ul .word i {
+    cursor: pointer;
+    color: #c31432;
+}
+
+ul .word i.disable {
+    color: rgb(150, 150, 150);
+    pointer-events: none;
+}
+
+.content li .details {
+    border-radius: 4px 0 0 4px;
+    border-left: 3px solid #c31432;
+    padding-left: 10px;
+}
+
+.synonyms .details .list span {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.850em;
+}
+
+.errFetch {
+    color: #ccc;
+    font-size: 0.850em;
+}
+
+footer{
+    bottom: 2;
+}
+
+@media only screen and (max-width: 550px){
+    .wrapper{
+        width: 350px;
+        font-size: 1rem;
+    }
+}

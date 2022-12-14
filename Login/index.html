@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiquidFire Hotspot</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+        </header>
+
+        <div class="title-text">
+            <div class="title voucher active">Voucher</div>
+            <div class="title long-term">Long Term</div>
+        </div>
+
+
+        <div class="form-container">
+            <form action="#" autocomplete="false">
+                <h5>Please login to use the service</h5>
+                <!-- <div class="field"> -->
+                <input id="uname" type="text" placeholder="Enter voucher code" required>
+                <!-- </div> -->
+                <!-- <div class="field"> -->
+                <input id="pw" type="password" placeholder="Password" required style="display: none">
+                <!-- </div>
+                <div class="field"> -->
+                <input type="submit" value="Connect">
+                <!-- </div> -->
+            </form>
+
+            <div class="separator"></div>
+            <div class="rates">
+                <button onclick="showRates()">Price Rates</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="card">
+           <header>
+                <h3>Modal Header</h3>
+            </header>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Price</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="price">Php 5.00</td>
+                            <td>3 hours, upto 3mbps</td>
+                        </tr>
+                        <tr>
+                            <td class="price">Php 10.00</td>
+                            <td>10 hours, upto 6mbps valid for 2 days</td>
+                        </tr>
+                        <tr>
+                            <td class="price">Php 50.00</td>
+                            <td>52 hours, upto 6mbps valid for 6 days</td>
+                        </tr>
+                        <tr>
+                            <td class="price">Php 250.00</td>
+                            <td>Unlimited, upto 10mbps valid for 30 days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer class="w3-container w3-teal">
+                <button onclick="closeModal()" class="modal-exit">Exit</button>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function showRates() {
+            document.querySelector('.modal').style.display = 'block';
+        }
+        function closeModal(){
+            document.querySelector('.modal').style.display = 'none';
+        }
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+
+.wrapper {
+    width: 390px;
+    background: #fff;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+header .logo {
+    width: 300px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.wrapper .title-text {
+    display: flex;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin: 0 auto;
+}
+
+.title-text .title {
+    cursor: pointer;
+    width: 50%;
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.title-text .title.active {
+    color: #fff;
+    border: none;
+    outline: 0;
+}
+
+.title-text .voucher.active {
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    border-radius: 10px 0 0 10px;
+
+}
+
+.title-text .long-term.active {
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    border-radius: 0 10px 10px 0;
+}
+
+/* 
+.wrapper .form-container {
+    width: 100%;
+} */
+
+form {
+    margin-top: 20px;
+}
+
+form h5 {
+    text-align: center;
+    color: #fa4299;
+}
+
+form input,
+.modal-exit {
+    margin: 10px 0;
+    height: 50px;
+    /* height: 100%; */
+    width: 100%;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 0.920em;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    border-bottom-width: 2px;
+}
+
+form input[type="submit"],
+.modal-exit {
+    cursor: pointer;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+
+form input[type="submit"]:hover,
+.modal-exit:hover {
+    opacity: 0.9;
+    border: 2px solid #a445b2;
+}
+
+.form-container .separator {
+    border-bottom: 1px solid lightgray;
+    margin: 20px 0;
+}
+
+.form-container .rates {
+    width: 100%;
+}
+
+.rates button {
+    width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #fa4299;
+}
+
+.rates button:hover {
+    text-decoration: underline;
+}
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal .card {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.27);
+    margin: 20vh auto;
+}
+
+.card header h3 {
+    text-align: center;
+    color: #fa4299;
+}
+
+.card header {
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.card .container {
+    font-size: 0.8em;
+    padding: 10px 10px 0 10px;
+}
+
+
+.container table,
+table td,
+th {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+
+
+.container td,
+.container th {
+    padding: 5px 10px;
+}
+
+td.price {
+    width: 40%;
+}
+
+.card footer {
+    padding: 0px 10px 5px 10px;
+}
+
+@media (max-width:576px){
+    .wrapper{
+        width: 350px;
+        margin-top: 10vh;
+    }
+}

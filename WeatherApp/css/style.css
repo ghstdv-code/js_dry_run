@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #273c75 !important;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 400px;
+    border-radius: 7px;
+}
+
+.wrapper header{
+    border-bottom: 1px solid #bfbfbf;
+    color: #273c75;
+    font-size: 18px;
+}
+
+.wrapper i{
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.input-group :where(button, input){
+    height: 2.8em;
+    border-radius: 5px;
+}
+
+.input-group .separator{
+    height: 1px;
+    background-color: #ccc;
+}
+
+.input-group .separator::before{
+    content: "or";
+    background-color: #fff;
+    padding: 0 15px;
+    color: #ccc;
+}
+
+.input-group p.error{
+    background-color: #edbcb7;
+    color: #c2473a;
+    border: 1px solid #e98c82;
+}
+
+.input-group p.pending{
+    background-color: #d6fff7;
+    color: #16a085;
+    border: 1px solid #25b195;
+}
+
+.input-group p{
+    background-color: #e6f3fd;
+    color: #3498db;
+    border: 1px solid #accadf;
+}
+
+.weather-report img{
+    max-width: 125px;
+    min-width: 120px;
+}
+
+.weather-report .location{
+    border-bottom: 1px solid #ccc;
+}
+
+.weather-report .temp :last-child{
+    font-size: 0.7em;
+    font-weight: 600
+}
+
+.row .humidity{
+    border-left: 1px solid #ccc !important;
+}
+
+.row .col{
+    height: 100%;
+}
+
+.col i{
+    font-size: 2.4em;
+    color: #273c75;
+}
+
+@media only screen and (max-width: 420px) {
+    .wrapper{
+        width: 350px;
+    }
+}
